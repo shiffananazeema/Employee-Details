@@ -1,0 +1,41 @@
+    Python Full Stack Development
+
+ - Always create the virtual enviroment to avoid messing up with the system
+ 
+ python -m venv env
+ .\env\Scripts\activatez
+
+ - Install and Create Django
+
+ django-admin startproject backend 
+
+- settings.py 
+    - INSTALLED_APPS
+    - MIDDLEWARE
+    - CORS_ORIGIN_ALLOW_ALL = True
+
+- django-admin startapp employees
+
+- model.py
+
+- python manage.py makemigrations    
+
+- python manage.py migrate                                          
+
+ - To Create a file in migration so that it will not be empty at first
+- python manage.py makemigrations --empty --name employees employees
+ - migrate again so that it will be created
+
+- serializers.py
+- views.py
+- urls.py
+
+- python manage.py runserver
+
+- npx create-react-app react_frontend
+src/index.js
+src/constants/index.js
+src/componants/NewEmployeeForm,NewEmployeeModal,EmployeeList,ConfirmRemovalModal,Home
+src/App.js
+
+npm start
